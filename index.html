@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+<body>
+
+    <h1 id="titel" onmouseover="document.getElementById('titel').
+    style.backgroundColor = 'purple'"
+    onmouseleave="document.getElementById('titel').
+    style.backgroundColor = 'White'">
+    Title of my page!</h1>
+
+    <p id="errorMessage"></p>
+    <form name="myForm" id="myFormId"> 
+        <input type="text" name="myFormTextInput">
+        <input type="text" value="default" name ="inputfield2" onkeydown="keyPress()">
+        <button type="button" value="Submit" onclick="validateInput()"> Submit! </button>
+
+    </form>
+
+
+</body>
+<script src="JS/SokobanBase.js"></script>
+<script src="./JS/UtilFunctions.js"></script>
+</html>
