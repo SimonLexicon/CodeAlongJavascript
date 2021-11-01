@@ -32,4 +32,10 @@ function drawMap(tileMap)
     }
 }
 
+document.addEventListener('keyup', logKey)
+function logKey(e)
+{
+    console.log(e.key);
+};
+
 drawMap(tileMap01);
