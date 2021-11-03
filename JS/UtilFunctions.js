@@ -38,4 +38,51 @@ function logKey(e)
     console.log(e.key);
 };
 
-drawMap(tileMap01);
+//drawMap(tileMap01);
+
+
+
+function listEmployees(){
+    //String
+    var json = {"name": "Simon"};
+
+    // number
+    json = {"age": 25};
+
+    //Object 
+    json = {
+        "Employeee": {
+            "name": "Simon",
+            "age": 25,
+            "city": "Skövde",
+        }
+    };
+
+    //Array
+    json = {
+        "employees": ["Simon", "Tobias", "Jonathan"]
+    };
+
+    json = {
+        "recording": true
+    };
+
+    var emp =
+    {
+        "employees": [
+            {"Firstname":"Simon", "lastName": "Heinonen", "age": 25},
+            {"Firstname":"Tobias", "lastName": "Andersson", "age": 33},
+            {"Firstname":"Jonathan", "lastName": "Larson", "age": 44},
+            {"Firstname":"Gustav", "lastName": "Bengtfors", "age": 41},
+        ]
+    }
+    for(x in emp.employees)
+    {
+        document.getElementById("array").innerHTML += "First name:"
+        + emp.employees[x].Firstname + "<br>" +
+        "Last name:" + emp.employees[x].lastName + "<br>" + 
+        "Age:" + emp.employees[x].age + "<hr>";
+    }
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery Effects</title>
+</head>
+<body>
+    <h1>Welcome to jquery Effects</h1>
+    <div id="div1" style="
+        height: 80px;
+        width: 80px;
+        background-color: red;
+        border-radius: 50%;
+        display: none;">
+    </div>
+
+    <div id="div2" style="
+        height: 80px;
+        width: 80px;
+        background-color: yellow;
+        border-radius: 50%;
+        display: none;">
+
+
+    </div>
+
+    <div id="div3" style="
+        height: 80px;
+        width: 80px;
+        background-color: green;
+        border-radius: 50%;
+        display: none;">
+
+
+    </div>
+    <button id="buttonTest">Fade out </button>
+    <button id="buttonTest2"> Fade In </button>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    
+    $(document).ready(function(){
+        $("#div1").fadeIn(1500);
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(4500);
+
+        $("#buttonTest2").click(function(){
+            $("#div1").fadeIn(1500);
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(4500);
+            $("#buttonTest").fadeIn(4500);
+        })
+
+        $("#buttonTest").click(function(){
+            $("#div1").fadeOut(1500);
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(4500);
+            $("#buttonTest").fadeOut(4500);
+        })
+
+})
+
+</script>
+</html>
+
